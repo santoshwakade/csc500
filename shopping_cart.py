@@ -130,10 +130,16 @@ Choose an option: """
 
 # Step 4: Main function
 def main():
-    # Create a shopping cart object
+    # Prompt the user for customer's name and date
     customer_name = input("Enter the customer's name: ")
     current_date = input("Enter today's date: ")
+
+    # Create the shopping cart
     cart = ShoppingCart(customer_name, current_date)
+
+    # Display the customer name and date
+    print(f"Customer name: {cart.customer_name}")
+    print(f"Today's date: {cart.current_date}")
 
     # Call the menu
     print_menu(cart)
